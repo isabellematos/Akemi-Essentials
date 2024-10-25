@@ -1,0 +1,11 @@
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #8b7a7a;
+    color: black;
+    font-weight: 100;
+    font-style: italic;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
