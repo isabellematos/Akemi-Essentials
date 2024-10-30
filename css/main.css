@@ -10,9 +10,9 @@ section{
 
 .cartao{
     color: white;
-    background-color: #AD9F9F;
+    background-color: #9BB381;
     width: 100%;
-    height: 100px;
+    height: 190px;
     font-size: 3rem;
     display: flex;
     align-items: center;
@@ -30,7 +30,7 @@ margin-left: 90rem;
 
 .card {
     width: 100%;
-    max-width: 15rem;
+    max-width: 20rem;
     background-color: #AD9F9F;
     /*
      margin-top: 1rem;
