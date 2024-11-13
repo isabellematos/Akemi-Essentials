@@ -1,25 +1,19 @@
-section{
-    height: 185vh;
-}
-
-
-.img-sobre{
-    height: 70%;
-    width: 100%;
+.inicial{
+    background-color: #9BB381;
 }
 
 .cartao{
-    color: white;
     background-color: #9BB381;
-    width: 100%;
-    height: 190px;
-    font-size: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    padding: 24px 0;
 }
 
+
+.sobre {
+    
+}
 .title{
 padding-top: 40px;
 padding-bottom: 20px;
