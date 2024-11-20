@@ -1,39 +1,78 @@
-.inicial{
-    background-color: #9BB381;
+main {
+    background-color: rgb(242, 224, 208, 0.58);
 }
 
-.cartao{
+.inicial{
     background-color: #9BB381;
+    max-width: 100%;
+}
+
+.inicial img {
+    max-width: 100%;
+}
+
+.inicial-cartao{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 24px 0;
 }
 
-
 .sobre {
-    
-}
-.title{
-padding-top: 40px;
-padding-bottom: 20px;
-margin-left: 90rem;
-
+    display: flex;
+    padding: 132px 440px 100px 430px;
+    justify-content: center;
+    gap: 120px;
 }
 
+.sobre-title {
+    font-family: 'Playball';
+    font-size: 50px;
+    color: #AD9F9F;
+    font-weight: 100;
+}
 
-.card {
-    width: 100%;
-    max-width: 20rem;
-    background-color: #AD9F9F;
-    /*
-     margin-top: 1rem;
-    margin-right: 1rem;
-    margin: 9rem;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    */
-    margin-left: 90rem;
-    padding: 2rem;
-    border-radius: 0.2rem;
+.sobre-txt {
+    margin-top: 8px;
+    font-family: 'Poppins';
+    background: #AD9F9F;
+    color: #F5F5F5;
+    padding: 46px;
+    border-radius: 9px;
+    text-align: center;
+    font-style: italic;
+    line-height: 112.5%;
+    font-size: 19px;
+}
+
+.sobre-trio-img{
+   width: 546px;
+   height: 510px;
+   padding-top: 48px;
+}
+
+.sobre-card{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Benefícios */
+
+.beneficios-lista{
+    display: flex;
+    color: #F5F5F5;
+    font-family: 'Poppins';
+    gap: 100px;
+}
+
+#alecrim {
+}
+
+.beneficios h2 {
+    font-family: 'Playball';
+    font-weight: 100;
+    color: #AD9F9F;
+    font-size: 60px;
 }

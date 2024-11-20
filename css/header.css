@@ -1,6 +1,6 @@
 header{
     width: 100%;
-    height: 80%;
+    height: 100px;
     display: flex;
     background-color: #BFADD9;
     align-items: center;
@@ -9,6 +9,7 @@ header{
     padding-bottom: 13px;;
     color: white;
     font-family: 'Lora';
+    position: fixed;
 }
 
 .img-logo{
