@@ -60,19 +60,257 @@ main {
 
 /* Benefícios */
 
-.beneficios-lista{
-    display: flex;
-    color: #F5F5F5;
-    font-family: 'Poppins';
-    gap: 100px;
-}
-
-#alecrim {
-}
-
 .beneficios h2 {
+    margin: 10%;
     font-family: 'Playball';
     font-weight: 100;
     color: #AD9F9F;
     font-size: 60px;
 }
+
+.beneficios-lista li{
+    position: relative; 
+    display: inline-block; 
+    display: flex;
+    color: #F5F5F5;
+    font-family: 'Poppins';
+    gap: 90px;
+}
+
+
+.beneficios-lista {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 70px; 
+    justify-content: center; 
+  }
+  
+  .beneficios-lista li {
+    position: relative; 
+    display: inline-block; 
+    text-align: center; 
+    width: 200px; 
+  }
+  
+  .beneficios-lista img {
+    display: block;
+    width: 100%; 
+    height: auto;
+    border-radius: 10px; 
+  }
+  
+  .beneficios-lista .text-overlay {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-70%, -60%); 
+    color: white; 
+    padding: 10px 15px; 
+    font-size: 14px; 
+    text-align: center; 
+  }
+  
+  .beneficios-lista li:hover .text-overlay {
+    display: block;
+  }
+  
+
+  .beneficios-lista span {
+    font-family: 'Playball';
+    font-weight: 100;
+    color: #AD9F9F;
+    margin-top: 10px; 
+    display: block;
+    font-size: 30px;
+  }
+  
+#alecrim img{
+    height: 327px;
+    width: 200px;
+}
+
+#lavanda img{
+    height: 327px;
+    width: 200px;
+}
+
+#laranja img{
+    height: 327px;
+    width: 200px;
+}
+
+#hortela img{
+    height: 327px;
+    width: 200px;
+}
+
+.respiro{
+    margin-top: 10%;
+    width: 100%; 
+    height: 350px; 
+    object-fit: cover;
+}
+
+/* Akemi */
+
+.akemi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 9rem 15vw;
+    gap: 6rem;
+    text-align: center;
+}
+
+.akemi h2 {
+    font-family: 'Playball';
+    font-weight: 100;
+    color: #AD9F9F;
+    font-size: 4rem;
+    margin: 5%;
+}
+
+.hist-title {
+    font-family: 'Playball';
+    font-size: 2.5rem;
+    color: #AD9F9F;
+    font-weight: 100;
+    margin-bottom: -150px;
+    margin-right: 450px;
+    text-align: center;
+}
+
+.hist-card {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 2rem; 
+    width: 100%;
+    max-width: 1200px;
+}
+
+.hist-txt {
+    background: #AD9F9F;
+    font-family: 'Poppins';
+    color: #F5F5F5;
+    padding: 3rem;
+    border-radius: 9px;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.125;
+    font-size: 1.2rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.circle-container {
+    width: 25vw;
+    height: 25vw;
+    max-width: 400px;
+    max-height: 400px;
+    border: 20px solid #AD9F9F;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+    margin-bottom: 15%;
+}
+
+.circle-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-container {
+    display: flex; /* Flexbox para organizar as imagens e o texto lado a lado */
+    justify-content: space-between; /* Espaça igualmente os itens */
+    align-items: center; /* Alinha verticalmente no centro */
+    gap: 30px; /* Espaçamento entre a coluna de imagens e o texto */
+}
+
+.foto-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    justify-items: center; 
+    align-items: center; 
+}
+
+.foto {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.overlay-text {
+    position: absolute;
+    font-family: 'Poppins';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.foto:hover {
+    transform: scale(1.1); /* Aumenta a imagem quando o mouse passa */
+}
+
+.foto:hover .overlay-text {
+    opacity: 1; /* Exibe o texto quando o mouse passa */
+}
+
+.info-container {
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.atendimento h3 {
+    font-size: 2rem;
+    color: #AD9F9F;
+    font-family: 'Playball';
+    font-weight: 600;
+}
+
+.contato-card {
+    margin-top: 20px;
+    background: #BFADD9;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contato-card p {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+
