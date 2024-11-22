@@ -61,7 +61,8 @@ main {
 /* Benefícios */
 
 .beneficios h2 {
-    margin: 10%;
+    margin-left: 43%;
+    margin-bottom: 2%;
     font-family: 'Playball';
     font-weight: 100;
     color: #AD9F9F;
@@ -73,8 +74,12 @@ main {
     display: inline-block; 
     display: flex;
     color: #F5F5F5;
+    text-align: center;  
     font-family: 'Poppins';
+    font-weight: 500;
+    font-style: italic;
     gap: 90px;
+    width: 200px; 
 }
 
 
@@ -91,8 +96,7 @@ main {
   .beneficios-lista li {
     position: relative; 
     display: inline-block; 
-    text-align: center; 
-    width: 200px; 
+    text-align: center;  
   }
   
   .beneficios-lista img {
@@ -106,10 +110,10 @@ main {
     position: absolute; 
     top: 50%; 
     left: 50%; 
-    transform: translate(-70%, -60%); 
+    transform: translate(-58%, -60%); 
     color: white; 
     padding: 10px 15px; 
-    font-size: 14px; 
+    font-size: 23px; 
     text-align: center; 
   }
   
@@ -119,12 +123,29 @@ main {
   
 
   .beneficios-lista span {
-    font-family: 'Playball';
-    font-weight: 100;
-    color: #AD9F9F;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 300;
+    color: #F5F5F5;
     margin-top: 10px; 
     display: block;
-    font-size: 30px;
+    font-size: 20px;
+    position: absolute;
+    top: 72%;
+    left: 45px;
+  }
+  
+    .pepper {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 300;
+    color: #F5F5F5;
+    margin-top: 10px; 
+    display: block;
+    font-size: 20px;
+    position: absolute;
+    top: 72%;
+    left: 35px;
   }
   
 #alecrim img{
@@ -160,8 +181,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 9rem 15vw;
-    gap: 6rem;
+    padding: 4rem 13vw;
+    gap: 1rem;
     text-align: center;
 }
 
@@ -170,7 +191,7 @@ main {
     font-weight: 100;
     color: #AD9F9F;
     font-size: 4rem;
-    margin: 5%;
+    margin: 2%;
 }
 
 .hist-title {
@@ -178,7 +199,7 @@ main {
     font-size: 2.5rem;
     color: #AD9F9F;
     font-weight: 100;
-    margin-bottom: -150px;
+    margin-bottom: -200px;
     margin-right: 450px;
     text-align: center;
 }
@@ -191,6 +212,7 @@ main {
     gap: 2rem; 
     width: 100%;
     max-width: 1200px;
+
 }
 
 .hist-txt {
@@ -219,7 +241,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: 20%;
-    margin-bottom: 15%;
+    margin-bottom: 20%;
 }
 
 .circle-container img {
@@ -229,6 +251,7 @@ main {
 }
 
 .content-container {
+    margin-top: -10%;
     display: flex; /* Flexbox para organizar as imagens e o texto lado a lado */
     justify-content: space-between; /* Espaça igualmente os itens */
     align-items: center; /* Alinha verticalmente no centro */
@@ -265,7 +288,7 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 24px;
+    font-size: 20px;
     color: white;
     opacity: 0;
     pointer-events: none;
@@ -273,7 +296,11 @@ main {
 }
 
 .foto:hover {
-    transform: scale(1.1); /* Aumenta a imagem quando o mouse passa */
+    transform: scale(1.3); /* Aumenta a imagem quando o mouse passa */
+}
+
+.foto:hover .overlay-text {
+    opacity: 1; /* Exibe o texto quando o mouse passa */
 }
 
 .foto:hover .overlay-text {
@@ -313,4 +340,30 @@ main {
     font-weight: 600;
 }
 
+.respiro2{
+    margin-top: 3%;
+    width: 100%; 
+    height: 350px; 
+    object-fit: cover;
+}
 
+.cards-depoimento{
+    position: relative; 
+    display: inline-block; 
+    align-items: row;
+}
+
+.depoimento {
+    display: flex;
+    background: #AD9F9F;
+    font-family: 'Poppins';
+    color: #F5F5F5;
+    padding: 3rem;
+    border-radius: 9px;
+    text-align: center;
+    font-style: italic;
+    line-height: 1.125;
+    font-size: 1.2rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
