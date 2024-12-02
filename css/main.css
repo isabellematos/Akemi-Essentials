@@ -347,23 +347,124 @@ main {
     object-fit: cover;
 }
 
-.cards-depoimento{
-    position: relative; 
-    display: inline-block; 
-    align-items: row;
+.depoimentos-title {
+    font-family: 'Playball';
+    font-size: 2.5rem;
+    color: #AD9F9F;
+    font-weight: 100;
+    margin-top: 150px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.cards-depoimento {
+    display: flex;
+    flex-wrap: wrap; /* Organiza os cards em linhas em telas menores */
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    gap: 20px; /* Espaçamento entre os cards */
+    margin: 50px auto; /* Espaço externo e centralização */
+    max-width: 1200px; /* Largura máxima da seção */
 }
 
 .depoimento {
-    display: flex;
-    background: #AD9F9F;
-    font-family: 'Poppins';
-    color: #F5F5F5;
-    padding: 3rem;
-    border-radius: 9px;
+    width: 350px; /* Largura fixa para os cards */
+    min-height: 330px; /* Altura mínima */
+    background: #ad9f9fd7;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    padding: 20px;
     text-align: center;
     font-style: italic;
-    line-height: 1.125;
-    font-size: 1.2rem;
-    max-width: 500px;
-    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 300;
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.depoimento:hover {
+    transform: scale(1.05); /* Destaca o card no hover */
+    background: #AD9F9F;
+
+}
+
+.nome {
+    display: block; /* Mantém em linha separada */
+    font-weight: 400; /* Negrito para destaque */
+    font-style: italic; /* Itálico para consistência com o texto */
+    color: #000; /* Cor do texto */
+    margin-top: 12px; 
+    margin-right: 160px;
+    font-size: 1rem; 
+}
+
+.depoimento:hover {
+    transform: scale(1.1); /* Aumenta a imagem quando o mouse passa */
+}
+
+.contato-section {
+    margin: 50px auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contato-tit {
+    font-family: 'Playball';
+    font-weight: 100;
+    font-size: 2.5rem;
+    color: #AD9F9F;
+    margin: 100px;
+}
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px; /* Espaço entre o ícone destaque e os demais elementos */
+}
+
+.icone-destaque img {
+    width: 250px; /* Tamanho do ícone dentro do círculo destaque */
+    height: 350px;
+}
+
+
+.contato-icones-container {
+    text-align: center; /* Centraliza o título e os ícones */
+}
+
+.contato-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #AD9F9F;
+    margin-bottom: 20px;
+}
+
+.contato-icones {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento horizontal entre os ícones */
+}
+
+.icone {
+    width: 70px;
+    height: 70px;
+    background-color: #AD9F9F;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.icone img {
+    width: 35px;
+    height: 35px;
+}
+
+.icone:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
