@@ -324,20 +324,15 @@ main {
 }
 
 .contato-card {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     margin-top: 20px;
     background: #BFADD9;
     color: white;
     padding: 1rem;
     border-radius: 8px;
-    width: 250px;
+    width: 230px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.contato-card p {
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    font-weight: 600;
 }
 
 .respiro2{
@@ -349,7 +344,7 @@ main {
 
 .depoimentos-title {
     font-family: 'Playball';
-    font-size: 2.5rem;
+    font-size: 60px;
     color: #AD9F9F;
     font-weight: 100;
     margin-top: 150px;
@@ -412,9 +407,9 @@ main {
 .contato-tit {
     font-family: 'Playball';
     font-weight: 100;
-    font-size: 2.5rem;
+    font-size: 60px;
     color: #AD9F9F;
-    margin: 100px;
+    margin: 50px;
 }
 
 .contato {
@@ -425,7 +420,7 @@ main {
 }
 
 .icone-destaque img {
-    width: 250px; /* Tamanho do ícone dentro do círculo destaque */
+    width: 200px; /* Tamanho do ícone dentro do círculo destaque */
     height: 350px;
 }
 
@@ -448,8 +443,8 @@ main {
 }
 
 .icone {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     background-color: #AD9F9F;
     border-radius: 50%;
     display: flex;
@@ -460,8 +455,8 @@ main {
 }
 
 .icone img {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
 }
 
 .icone:hover {
